@@ -3,6 +3,8 @@
 	<header>
 		<!-- including bootstap from CDN -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 		
 		<!-- including JS -->
 		<script type="text/javascript" src="js/main.js"></script>
@@ -18,15 +20,16 @@
 				<br /><br />
 			</div>
 
-			<div class="row">
-
-				<h1 id="carStatusOutput"></h1>
-				<br /><br />
+			<div class="row makeThisBig">
+				<div id="carStatusOutput" class="makeThisGreen"></div>
+				<div id="carSpeedOutput" class="makeThisGreen"></div>
+				<div id="carMilesOutput" class="makeThisGreen"></div>
 			</div>
 
-			<div class="row">
+			<div class="row makeThisGreen">
 
 				<button onclick="car.drive();">drive the car</button>
+				<button onclick="car.break();">break</button>
 				<button onclick="car.reverse();">drive the car in reverse</button>
 				<button onclick="car.park();">park the car</button>
 				<br /><br />
