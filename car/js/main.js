@@ -78,3 +78,26 @@ function blahsFriends(){
 }
 
 blah(foo, blahsFriends);
+
+//this is the end of foo and blah functions
+
+var radio = {
+	status: 'on',
+	color: 'black',
+	antenna: 'up',
+	volume: 0,
+	channel: 0,
+	year: '2015',
+	showYear: function () {
+		alert(radio.year); 
+	},//end of function
+	showcolor: function (){
+		alert(radio.color);
+	},// end of function
+	showantenna: function (){
+		alert(radio.antenna)
+	},// end of function
+	TurnUpVolume: function (){
+		if (this.volume = this.volume + 1) {} else{};
+	}
+}
